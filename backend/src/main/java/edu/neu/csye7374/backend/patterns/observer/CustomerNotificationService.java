@@ -1,4 +1,4 @@
-package com.neu.design.pattern.project.ECommercePlatform.patterns.observer;
+package edu.neu.csye7374.backend.patterns.observer;
 
 import com.neu.design.pattern.project.ECommercePlatform.patterns.singleton.CartItem;
 import com.neu.design.pattern.project.ECommercePlatform.service.EmailService;
