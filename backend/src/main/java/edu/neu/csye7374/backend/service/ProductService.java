@@ -1,8 +1,8 @@
 package edu.neu.csye7374.backend.service;
 
-import com.neu.design.pattern.project.ECommercePlatform.jpa.repository.ProductRepository;
-import com.neu.design.pattern.project.ECommercePlatform.models.Product;
-import com.neu.design.pattern.project.ECommercePlatform.patterns.decorator.DiscountedProduct;
+import edu.neu.csye7374.backend.jpa.repository.*;
+import edu.neu.csye7374.backend.models.*;
+import edu.neu.csye7374.backend.patterns.decorator.DiscountedProduct;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
