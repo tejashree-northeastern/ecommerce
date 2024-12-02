@@ -1,9 +1,9 @@
-package com.neu.design.pattern.project.ECommercePlatform.service;
+package edu.neu.csye7374.backend.service;
 
-import com.neu.design.pattern.project.ECommercePlatform.jpa.repository.UserRepository;
-import com.neu.design.pattern.project.ECommercePlatform.models.PlatformUser;
-import com.neu.design.pattern.project.ECommercePlatform.patterns.strategy.StrategyAPI;
-import com.neu.design.pattern.project.ECommercePlatform.patterns.strategy.UserStrategy;
+import edu.neu.csye7374.backend.jpa.repository.UserRepository;
+import edu.neu.csye7374.backend.models.PlatformUser;
+import edu.neu.csye7374.backend.patterns.strategy.StrategyAPI;
+import edu.neu.csye7374.backend.patterns.strategy.UserStrategy;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -28,16 +28,14 @@ public class UserManagementService {
         strategy.update(id);
     }
 
-    public void deletebyID( int id) {
+    public void deletebyID(int id) {
         StrategyAPI strategy = new UserStrategy(userRepository, id);
         strategy.delete();
     }
 
-    public void save( PlatformUser employee) {
+    public void save(PlatformUser employee) {
         StrategyAPI strategyAPI = new UserStrategy(userRepository, employee);
         strategyAPI.add();
     }
-
-
 
 }

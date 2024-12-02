@@ -1,6 +1,6 @@
-package com.neu.design.pattern.project.ECommercePlatform.patterns.state;
+package edu.neu.csye7374.backend.patterns.state;
 
-import com.neu.design.pattern.project.ECommercePlatform.patterns.observer.Order;
+import edu.neu.csye7374.backend.patterns.observer.Order;
 
 public class ShippedState implements OrderState {
     public void next(Order order) {

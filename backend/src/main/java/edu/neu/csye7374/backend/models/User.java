@@ -1,6 +1,6 @@
 package edu.neu.csye7374.backend.models;
 
-import com.neu.design.pattern.project.ECommercePlatform.models.api.SystemUserAPI;
+import edu.neu.csye7374.backend.models.api.SystemUserAPI;
 
 public class User implements SystemUserAPI {
     public String userName;

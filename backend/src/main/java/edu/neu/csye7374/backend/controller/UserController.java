@@ -1,10 +1,9 @@
-package com.neu.design.pattern.project.ECommercePlatform.controller;
+package edu.neu.csye7374.backend.controller;
 
-
-import com.neu.design.pattern.project.ECommercePlatform.jpa.repository.UserRepository;
-import com.neu.design.pattern.project.ECommercePlatform.models.PlatformUser;
-import com.neu.design.pattern.project.ECommercePlatform.service.LoginService;
-import com.neu.design.pattern.project.ECommercePlatform.service.UserManagementService;
+import edu.neu.csye7374.backend.jpa.repository.UserRepository;
+import edu.neu.csye7374.backend.models.PlatformUser;
+import edu.neu.csye7374.backend.service.LoginService;
+import edu.neu.csye7374.backend.service.UserManagementService;
 import net.minidev.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -34,7 +33,7 @@ public class UserController {
 
     @PutMapping("/{id}")
     public void update(@RequestBody PlatformUser platformUser, @PathVariable int id) {
-       userManagementService.update(platformUser, id);
+        userManagementService.update(platformUser, id);
     }
 
     @DeleteMapping("/{id}")
@@ -44,12 +43,12 @@ public class UserController {
 
     @PostMapping("/create")
     public void createNewUser(@RequestBody PlatformUser platformUser) {
-       userManagementService.save(platformUser);
+        userManagementService.save(platformUser);
     }
 
     @PostMapping("/login")
     public PlatformUser login(@RequestBody JSONObject creds) {
-     return   loginService.login(creds);
+        return loginService.login(creds);
     }
 
 }

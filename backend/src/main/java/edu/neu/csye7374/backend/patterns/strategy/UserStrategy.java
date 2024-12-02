@@ -1,8 +1,8 @@
-package com.neu.design.pattern.project.ECommercePlatform.patterns.strategy;
+package edu.neu.csye7374.backend.patterns.strategy;
 
-import com.neu.design.pattern.project.ECommercePlatform.jpa.repository.UserRepository;
-import com.neu.design.pattern.project.ECommercePlatform.models.PlatformUser;
-import com.neu.design.pattern.project.ECommercePlatform.patterns.factory.ErrorFactory;
+import edu.neu.csye7374.backend.jpa.repository.UserRepository;
+import edu.neu.csye7374.backend.models.PlatformUser;
+import edu.neu.csye7374.backend.patterns.factory.ErrorFactory;
 
 import org.springframework.web.server.ResponseStatusException;
 
@@ -30,9 +30,10 @@ public class UserStrategy implements StrategyAPI {
     public void add() {
         userRepository.findByUsername(platformUser.getUsername())
                 .ifPresentOrElse(
-                        u -> { throw ErrorFactory.createUsernameExistsError(platformUser.getUsername()); },
-                        this::saveUser
-                );
+                        u -> {
+                            throw ErrorFactory.createUsernameExistsError(platformUser.getUsername());
+                        },
+                        this::saveUser);
     }
 
     @Override
@@ -56,7 +57,6 @@ public class UserStrategy implements StrategyAPI {
         userRepository.save(platformUser);
     }
 
-
     private Supplier<ResponseStatusException> userNotFoundErrorSupplier(int userId) {
         return () -> ErrorFactory.createUserNotFoundError(userId);
     }
@@ -66,6 +66,5 @@ public class UserStrategy implements StrategyAPI {
         userToUpdate.setUsername(platformUser.getUsername());
         userToUpdate.setPassword(platformUser.getPassword());
     };
-
 
 }

@@ -1,12 +1,11 @@
 package edu.neu.csye7374.backend.models;
 
-import com.neu.design.pattern.project.ECommercePlatform.models.api.PersonAPI;
+import edu.neu.csye7374.backend.models.api.PersonAPI;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import lombok.Data;
-
 
 @Entity
 public class Person implements PersonAPI {
@@ -49,8 +48,7 @@ public class Person implements PersonAPI {
         this.age = age;
     }
 
-    public void setDateOfBirth(String dateOfBirth)
-    {
+    public void setDateOfBirth(String dateOfBirth) {
         this.dateOfBirth = dateOfBirth;
     }
 

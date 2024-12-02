@@ -1,7 +1,7 @@
 package edu.neu.csye7374.backend.models;
 
-import com.neu.design.pattern.project.ECommercePlatform.models.api.PersonAPI;
-import com.neu.design.pattern.project.ECommercePlatform.models.api.SystemUserAPI;
+import edu.neu.csye7374.backend.models.api.PersonAPI;
+import edu.neu.csye7374.backend.models.api.SystemUserAPI;
 import jakarta.persistence.*;
 import lombok.Data;
 
@@ -16,7 +16,6 @@ public class PlatformUser implements SystemUserAPI {
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "person_id")
     private Person person;
-
 
     @Override
     public String getFullName() {
@@ -55,13 +54,13 @@ public class PlatformUser implements SystemUserAPI {
     public void setAge(int age) {
         this.person.setAge(age);
     }
-    public void setPerson(Person person)
-    {
+
+    public void setPerson(Person person) {
         this.person = person;
     }
 
     public void setFullName(String fullName) {
-        this.person.setFullName( fullName);
+        this.person.setFullName(fullName);
     }
 
     public void setUsername(String username) {

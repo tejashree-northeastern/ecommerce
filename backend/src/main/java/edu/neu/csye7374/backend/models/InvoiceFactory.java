@@ -1,6 +1,12 @@
 package edu.neu.csye7374.backend.models;
 
+import java.util.Date;
+
+import org.json.JSONArray;
 import org.json.JSONObject;
+
+import edu.neu.csye7374.backend.patterns.observer.Order;
+import edu.neu.csye7374.backend.patterns.singleton.CartItem;
 
 public class InvoiceFactory {
     public static JSONObject generateInvoice(Order order) {

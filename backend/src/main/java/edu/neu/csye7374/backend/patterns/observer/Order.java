@@ -51,6 +51,7 @@ public class Order {
         this.stateType = "processing";
         observers.add(new CustomerNotificationService(new EmailService()));
     }
+
     public Order(List<CartItem> items) {
         this.state = new ProcessingState();
         this.items = items;
@@ -58,6 +59,7 @@ public class Order {
         this.stateType = "processing";
         observers.add(new CustomerNotificationService(new EmailService()));
     }
+
     public void setState(OrderState state) {
         this.state = state;
     }
@@ -84,8 +86,7 @@ public class Order {
 
     }
 
-    public List<CartItem> getItems()
-    {
+    public List<CartItem> getItems() {
         return items;
     }
 
