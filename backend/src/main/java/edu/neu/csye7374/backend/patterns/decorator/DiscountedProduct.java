@@ -1,6 +1,6 @@
-package com.neu.design.pattern.project.ECommercePlatform.patterns.decorator;
+package edu.neu.csye7374.backend.patterns.decorator;
 
-import com.neu.design.pattern.project.ECommercePlatform.models.Product;
+import edu.neu.csye7374.backend.models.Product;
 
 public class DiscountedProduct extends ProductDecorator {
     private double discountRate;
