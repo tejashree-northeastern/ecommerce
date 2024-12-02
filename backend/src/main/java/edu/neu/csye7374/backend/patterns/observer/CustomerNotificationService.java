@@ -1,7 +1,7 @@
 package edu.neu.csye7374.backend.patterns.observer;
 
-import com.neu.design.pattern.project.ECommercePlatform.patterns.singleton.CartItem;
-import com.neu.design.pattern.project.ECommercePlatform.service.EmailService;
+import edu.neu.csye7374.backend.patterns.singleton.CartItem;
+import edu.neu.csye7374.backend.service.EmailService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;

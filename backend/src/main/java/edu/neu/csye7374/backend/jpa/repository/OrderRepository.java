@@ -1,6 +1,6 @@
 package edu.neu.csye7374.backend.jpa.repository;
 
-import com.neu.design.pattern.project.ECommercePlatform.patterns.observer.Order;
+import edu.neu.csye7374.backend.patterns.observer.Order;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

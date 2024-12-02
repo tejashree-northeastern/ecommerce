@@ -1,11 +1,11 @@
 package edu.neu.csye7374.backend.patterns.observer;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.neu.design.pattern.project.ECommercePlatform.patterns.factory.StateFactory;
-import com.neu.design.pattern.project.ECommercePlatform.patterns.singleton.CartItem;
-import com.neu.design.pattern.project.ECommercePlatform.patterns.state.OrderState;
-import com.neu.design.pattern.project.ECommercePlatform.patterns.state.ProcessingState;
-import com.neu.design.pattern.project.ECommercePlatform.service.EmailService;
+import edu.neu.csye7374.backend.patterns.factory.StateFactory;
+import edu.neu.csye7374.backend.patterns.singleton.CartItem;
+import edu.neu.csye7374.backend.patterns.state.OrderState;
+import edu.neu.csye7374.backend.patterns.state.ProcessingState;
+import edu.neu.csye7374.backend.service.EmailService;
 import jakarta.persistence.*;
 
 import java.util.ArrayList;
