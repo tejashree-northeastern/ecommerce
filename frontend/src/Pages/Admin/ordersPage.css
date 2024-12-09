@@ -1,0 +1,64 @@
+/* General styling for the orders page */
+.orders-page {
+    font-family: Arial, sans-serif;
+    color: #371111; /* Dark grey text for readability */
+    padding: 20px;
+    width: 100%;
+    min-height: 100vh; /* Ensures the page takes full view height */
+  }
+  
+  /* Header styling */
+  .orders-page h1 {
+    color: #fff; /* White text for the header */
+    background-color: #2C3E50; /* Dark blue-grey background for contrast */
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 30px; /* Space below the header */
+  }
+  
+  /* Container for orders */
+  .order-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Distributes space around items */
+    padding: 10px;
+  }
+  
+  /* Individual order card styling */
+  .order-card {
+    background-color: #ffffff; /* White background for cards */
+    border: 1px solid #ccc; /* Light grey border */
+    padding: 15px;
+    margin: 10px;
+    width: 250px; /* Fixed width for each card */
+    border-radius: 8px; /* Rounded corners for the card */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+  }
+  
+  .order-card p {
+    margin: 5px 0; /* Vertical spacing for paragraph elements */
+  }
+  
+  /* Button styling */
+  .button {
+    background-color: #007bff; /* Bright blue for buttons */
+    color: #fff; /* White text on buttons */
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    display: block; /* Ensure buttons are block to take full width */
+    width: 100%;
+    margin-top: 10px; /* Margin on top for spacing from text */
+  }
+  
+  .button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  .button:disabled {
+    background-color: #ccc; /* Light grey when button is disabled */
+  }
+  

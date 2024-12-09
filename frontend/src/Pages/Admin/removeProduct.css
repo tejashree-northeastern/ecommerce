@@ -1,0 +1,53 @@
+/* General page styling */
+.remove-product-page {
+    font-family: Arial, sans-serif;
+    color: #333; /* Dark grey text for readability */
+    padding: 20px;
+    width: 100%;
+    min-height: 100vh;
+  }
+  
+  /* Header styling with white color */
+  .remove-product-page h1 {
+    color: #fff; /* White text for the header */
+    background-color: #2C3E50; /* Dark blue-grey background */
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 30px; /* Space below the header */
+  }
+  
+  /* Button styling */
+  button {
+    background-color: #b4e8ea; /* Bright blue for buttons */
+    color: #161515; /* White text on buttons */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 20px; /* Margin below the button */
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Darker blue when hovered */
+  }
+  
+  /* List styling */
+  ul {
+    list-style: none; /* Removes bullet points */
+    padding: 0;
+  }
+  
+  li {
+    background-color: #fff; /* White background for list items */
+    padding: 10px;
+    margin-bottom: 10px; /* Space between list items */
+    border: 1px solid #ccc; /* Subtle border for each list item */
+    border-radius: 5px; /* Rounded corners for list items */
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 10px; /* Space between checkbox and text */
+  }
+  

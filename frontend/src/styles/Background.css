@@ -1,0 +1,31 @@
+/* src/styles/Background.css */
+.app-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/Users/PiyushP/Downloads/Marketplace/Marketplace-DP/frontend/da7gj37-eb5c5cff-c073-4d6a-8f4a-45bc435dbb46.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat-x;
+    z-index: -1;
+    animation: scrollBackground 50s linear infinite;
+  }
+  
+  /* Make content area have a semi-transparent backdrop */
+  .content-wrapper {
+    background-color: rgba(255, 255, 255, 0.9);
+    min-height: 100vh;
+    padding: 20px;
+    padding-top: 84px; /* navbar height + padding */
+  }
+  
+  @keyframes scrollBackground {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: -100% 0;
+    }
+  }

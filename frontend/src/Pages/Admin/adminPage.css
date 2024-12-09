@@ -1,0 +1,59 @@
+/* General styling for the admin page container */
+.admin-page {
+  font-family: Arial, sans-serif;
+  color: #d0c5c5; /* Dark grey text color for readability */
+  padding: 20px;
+  padding-top: 80px; /* Increased top padding to push content below the navbar */
+  width: 100%;
+  min-height: 100vh; /* Full view height */
+  box-sizing: border-box;
+}
+
+/* Header styling */
+.admin-page h1 {
+  color: #fff; /* White text for the header */
+  background-color: #3790e8; /* Dark blue-grey background for contrast */
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+  margin-bottom: 30px; /* Space below the header */
+}
+
+/* Button styling */
+button {
+  background-color: #007bff; /* Bright blue for buttons */
+  color: #fff; /* White text on buttons */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 10px; /* Space around buttons */
+  text-decoration: none; /* No underline on text */
+  display: inline-block; /* Align buttons correctly with text */
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue when hovered */
+}
+
+/* Link styling - removing default link styles */
+a {
+  text-decoration: none; /* Remove underline from links */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .admin-page {
+    padding-top: 60px; /* Adjust padding for smaller screens */
+  }
+  .admin-page h1 {
+    font-size: 20px; /* Smaller font size for smaller screens */
+    padding: 15px;
+  }
+
+  button {
+    padding: 8px 16px;
+    font-size: 14px; /* Smaller font size for smaller screens */
+  }
+}
